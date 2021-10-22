@@ -1,0 +1,26 @@
+
+<div class="header"> <h1>Appoinments</h1></div>
+<div class="container">
+ 
+
+  <ul class="w3-ul w3-card-4" *ngFor="let appointment of appoinement"  >
+    <li class="w3-bar">
+      
+      <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">{{appointment.name}}</span><br>
+        <span class="w3-large">{{appointment.email}}</span><br>
+        <span>{{appointment.appoinmentDate}}</span>
+        <form >
+          <label for="cars">Status:</label>
+          <select name="cars" id="cars">
+            <option value="confirmed">confirmed</option>
+            <option value="rejected">rejected</option>
+          </select>
+        </form>
+      </div>
+    </li>
+
+  
+  </ul>
+</div>
