@@ -49,6 +49,7 @@ export class AppoinmentComponent implements OnInit {
     userId:userId,
     DoctorId:DoctorId, 
   }
+
 console.log('my form',formdata)
   this.appoinement.addappoinmentdata(formdata).subscribe(
     (res: any) => {
@@ -62,7 +63,7 @@ console.log('my form',formdata)
       console.log(err)
     
     })
-  //  this.router.navigate(['/login'])
+   this.router.navigate(['/home'])
 
 }
 }

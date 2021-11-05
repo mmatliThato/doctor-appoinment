@@ -45,7 +45,7 @@ register(){
       console.log(err)
     
     })
-  
+    this.router.navigate(['/login'])
    
   }
 

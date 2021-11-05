@@ -1,3 +1,11 @@
+
+.doc{
+
+margin-top: 50px;
+
+}
+
+
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
@@ -6,6 +14,8 @@
     width: 95vw;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     
   }
   .button {
@@ -56,7 +66,6 @@
   
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
@@ -78,5 +87,14 @@
   flex-direction: column;
   justify-content:unset;
  
+
+}
+.image{
+
+  margin-left: 35%;
+}
+h1{
+
+color: white;
 
 }

@@ -66,13 +66,13 @@ Login(){
 
     this.authService.login(this.loginForm.value).subscribe((data)=>{
         this.tokenParam = data;
-
-        if(this.tokenParam.accessToken)
-        {
+      console.log(this.tokenParam.accessToken);
       
+      
+          this.router.navigate(['/Appoinmentlist'])
        
-          // this.router.navigate(['/appoinmentlist'])
-        }
+         
+        
 
         
     }, (err:any) => {

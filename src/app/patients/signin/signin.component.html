@@ -1,40 +1,86 @@
 
-<div class="flex-container">
-    <div>
-     
-  
-      <form [formGroup]="loginForm"  [formGroup]="loginForm"  (ngSubmit)="Login()">
-        <div class="container">
-            <div class="reg">
-                <h1>Sign In</h1>
-                <img src="/assets/images/undraw_Vehicle_sale_a645.svg" />
-            </div>
-          
-          <hr>
-      
-       
-          <input type="text" placeholder="Enter Email" name="email" required formControlName="username">
-      
-         
-          <input type="password" placeholder="Enter Password" name="psw" required formControlName="password">
-      
+<!-- <div class="flex-container">
+  <div >
+   
 
-          
-        
-          
-
-      
-          <div class="clearfix">
-           
-            <button type="submit" class="signupbtn">Sign Up</button>
+    <form  [formGroup]="loginForm"  (ngSubmit)="Login()" >
+      <div class="container">
+          <div class="reg">
+              <h1>Sign In As Doctor</h1>
+              <img src="/assets/images/undraw_Vehicle_sale_a645.svg" />
           </div>
-        </div>
-      </form>
-      
-   
-  </div>
-  
+        
+        <hr>
     
+     
+        <input type="text" placeholder="Enter Email" name="email" required formControlName="username">
+    
+       
+        <input type="password" placeholder="Enter Password" name="psw" required formControlName="password">
+    
+
+        
+     
+        
+
+    
+        <div class="clearfix">
+         
+          <button type="submit" class="signupbtn" >Signin</button>
+        </div>
+      </div>
+    </form>
+    
+ 
+</div>
+
+  
+ 
+</div> -->
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+<div class="wrapper">
+
+  <div class="title">
+  Login  Here
+  </div>
+  <div class="social_media">
+    <div class="item">
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <div class="item">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="item">
+      <i class="fab fa-google-plus-g"></i>
+    </div>
+  </div>
+  <form>
+    
+  </form>
+  <div class="form" >
+    <form  [formGroup]="loginForm"  (ngSubmit)="Login()">
+      <div class="input_field">
+        <input type="Email" placeholder="Name" class="input" formControlName="username">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="input_field">
+        <input type="password" placeholder="password" class="input" formControlName="password">
+        <i class="fas fa-user"></i>
+
+      </div>
+     
+      
+     
+     
+      <!-- <div class="btn"> -->
+        <button type="submit" class="btn"  >Logiin </button>
+<!--   
+      </div> -->
+    </form>
    
   </div>
-  
+</div>

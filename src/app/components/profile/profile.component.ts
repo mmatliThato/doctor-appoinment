@@ -23,6 +23,7 @@ export class ProfileComponent implements OnInit {
 constructor(private http:HttpClient,private auth :AuthService,    private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    
     const params = this.activatedRoute.snapshot.params;
     if (params.id) {
       this.auth.getDoctor(params.id)

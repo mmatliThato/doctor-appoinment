@@ -104,7 +104,11 @@ img {
   padding: 1rem;
   background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 }
+.header{
 
+  display: flex;
+  justify-content: space-evenly;
+}
 .card_title {
   color: #ffffff;
   font-size: 1.1rem;

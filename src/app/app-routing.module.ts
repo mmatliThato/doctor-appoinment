@@ -10,22 +10,32 @@ import { DoctorprofileComponent } from './components/doctorprofile/doctorprofile
 import { SigninComponent } from './patients/signin/signin.component';
 import { SignupComponent } from './patients/signup/signup.component';
 import { AppoinmentlistComponent } from './components/appoinmentlist/appoinmentlist.component';
+import { HeaderComponent } from './default/header/header.component';
 
 const routes: Routes = [
-  
+
+
+  {
+    path: 'header',
+    component: HeaderComponent,
+    children: [
+      {path:'home', component:HomeComponent, pathMatch: 'full'},
+      {path:'profile', component:ProfileComponent, pathMatch: 'full'},
+      {path:'signin', component:SigninComponent, pathMatch: 'full'},
+      {path:'signup', component:SignupComponent, pathMatch: 'full'},
+      {path:'appoinment', component:AppoinmentComponent, pathMatch: 'full'},
+    ]
+  },
+
 {path:'Appoinmentlist', component:AppoinmentlistComponent, pathMatch: 'full'},
 {path: '', redirectTo: 'landing', pathMatch: 'full'},
 {path:'landing',component:LandingComponent, pathMatch: 'full'},
-{path:'doctor/show/:id',component: DoctorprofileComponent, pathMatch: 'full'},
 
+{path:'doctor/show/:id',component: DoctorprofileComponent, pathMatch: 'full'},
 
 {path:'register', component:RegisterComponent, pathMatch: 'full'},
 {path:'login', component:LoginComponent, pathMatch: 'full'},
-{path:'home', component:HomeComponent, pathMatch: 'full'},
-{path:'profile', component:ProfileComponent, pathMatch: 'full'},
-{path:'signin', component:SigninComponent, pathMatch: 'full'},
-{path:'signup', component:SignupComponent, pathMatch: 'full'},
-{path:'appoinment', component:AppoinmentComponent, pathMatch: 'full'},
+
 {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

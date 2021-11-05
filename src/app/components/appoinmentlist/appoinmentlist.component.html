@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="header"> <h1>Appoinments</h1></div>
 <div class="container">
  
@@ -10,7 +10,7 @@
       <div class="w3-bar-item">
         <span class="w3-large">{{appointment.name}}</span><br>
         <span class="w3-large">{{appointment.email}}</span><br>
-        <span>{{appointment.appoinmentDate}}</span>
+        <span> {{appointment.appoinmentDate}} </span>
         <form >
           <label for="cars">Status:</label>
           <select name="cars" id="cars">
@@ -23,4 +23,31 @@
 
   
   </ul>
-</div>
+</div> -->
+
+<h1>Appoinment List</h1>
+
+<table id="customers"   >
+  <tr>
+    <th>Name</th>
+    <th>appoinmentDate</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let appointment of appoinement" >
+    <td>{{appointment.name}}</td>
+    <td>{{appointment.appoinmentDate}} </td>
+    <td>
+      
+     
+        <label for="cars">Status:</label>
+        <select (change)="update($event, appointment.userId)" name="cars" id="cars">
+          <option >{{appointment.status}}</option>
+          <option *ngIf="appointment.status === 'rejected' || appointment.status === 'Pending'" value="confirmed">confirmed</option>
+          <option *ngIf="appointment.status === 'confirmed'|| appointment.status === 'Pending' " value="rejected">rejected</option>
+        </select>
+     
+  </td>
+
+
+  </tr>
+</table>

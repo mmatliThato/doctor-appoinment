@@ -19,6 +19,7 @@ import { SignupComponent } from './patients/signup/signup.component';
 import { PatientprofileComponent } from './patients/patientprofile/patientprofile.component';
 import { AppoinmentlistComponent } from './components/appoinmentlist/appoinmentlist.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { AppoinmentlistComponent } from './components/appoinmentlist/appoinmentl
     SignupComponent,
     PatientprofileComponent,
     AppoinmentlistComponent,
+
    
 
   ],
