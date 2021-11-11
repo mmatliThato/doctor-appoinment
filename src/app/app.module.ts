@@ -18,6 +18,7 @@ import { SigninComponent } from './patients/signin/signin.component';
 import { SignupComponent } from './patients/signup/signup.component';
 import { PatientprofileComponent } from './patients/patientprofile/patientprofile.component';
 import { AppoinmentlistComponent } from './components/appoinmentlist/appoinmentlist.component';
+import { UpdateprofileComponent } from './components/updateprofile/updateprofile.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { AppoinmentlistComponent } from './components/appoinmentlist/appoinmentl
     SignupComponent,
     PatientprofileComponent,
     AppoinmentlistComponent,
+    UpdateprofileComponent,
 
    
 

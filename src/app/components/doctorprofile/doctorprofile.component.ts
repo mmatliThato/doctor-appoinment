@@ -20,7 +20,7 @@ export class DoctorprofileComponent implements OnInit {
     phonenumber: 0,
     Qualification: '',
     username: '',
-   
+    profileImage: ''
   };
 
   DoctorId:any;

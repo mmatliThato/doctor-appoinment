@@ -10,6 +10,8 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  showModal : boolean = true;
+  
   doctor: Doctor = {
     name: '',
     title: '',
@@ -18,6 +20,7 @@ export class ProfileComponent implements OnInit {
     phonenumber: 0,
     Qualification: '',
     username: '',
+    profileImage: ''
    
   };
 constructor(private http:HttpClient,private auth :AuthService,    private activatedRoute: ActivatedRoute) { }
@@ -38,5 +41,15 @@ constructor(private http:HttpClient,private auth :AuthService,    private activa
     }
 
   }
+  //showModal used to show and hide modal
+
+  show(){
+		this.showModal =!this.showModal; 
+	}
+
+	hide(){
+	  this.showModal = false;
+	}
+  
 
 }

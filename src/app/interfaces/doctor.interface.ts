@@ -8,5 +8,5 @@ export interface Doctor {
     yearsOfex: number;
     phonenumber: number;
     Qualification: string;
-    
+    profileImage: '';
 }
