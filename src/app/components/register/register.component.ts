@@ -37,7 +37,7 @@ register(){
   console.table(this.signUpForm.value)
   this.auth.registerUser(this.signUpForm.value).subscribe(
     (res: any) => {
-      //  localStorage.setItem('DoctorId', res);
+     
       console.log("heyyyy",res);
      
     },

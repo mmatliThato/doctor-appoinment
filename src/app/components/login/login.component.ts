@@ -65,11 +65,13 @@ export class LoginComponent implements OnInit {
 Login(){
 
     this.authService.login(this.loginForm.value).subscribe((data)=>{
-        this.tokenParam = data;
-      console.log(this.tokenParam.accessToken);
+
+    this.tokenParam = data;
+    
+    console.log(this.tokenParam.accessToken);
+
       
-      
-          this.router.navigate(['/Appoinmentlist'])
+    this.router.navigate(['/profile'])
        
          
         

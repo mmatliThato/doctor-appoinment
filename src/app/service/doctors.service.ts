@@ -18,6 +18,15 @@ export class doctorsService {
 	{
 		console.log(doctordetails)
 		return this.http.get(`${this.TokenAPI}/auth/getAll`,doctordetails) ;
+  }
+  
+
+  
+  update(id:any)
+
+	{
+		console.log(id)
+		return this.http.put(`${this.TokenAPI}/auth/`,id) ;
 	}
 
 

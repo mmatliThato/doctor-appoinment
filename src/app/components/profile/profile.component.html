@@ -1,42 +1,22 @@
-
-   <!-- The Modal -->
-   <div class="modal" id="myModal" [style.display]="showModal ? 'block' : 'none'" >
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3> Edit Profile </h3>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16" (click)="hide()" >
-          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-        </svg>
-            </div>
-            <div class="modal-body">
-        <p class=" paragraph">sdfghjkl;'\</p>
-            </div>
-            
-        </div>
-    </div>
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="card">
+      <div class="upper"> <img src="https://i.imgur.com/Qtrsrk5.jpg" class="img-fluid"> </div>
+      <div class="user text-center">
+          <div class="profile"> <img src="https://i.imgur.com/JgYD2nQ.jpg" class="rounded-circle" width="80"> </div>
+      </div>
+      <div class="mt-5 text-center">
+          <h4 class="mb-0">{{doctor.username}} {{doctor.name}}</h4> <span class="text-muted d-block mb-2">{{doctor.Qualification}}</span> <span class="text-muted d-block mb-2">{{doctor.location}}</span> <button [routerLink]="['/updateprofile/']"  class="btn btn-primary btn-sm follow">Update Profile </button>
+          <div class="d-flex justify-content-between align-items-center mt-4 px-4">
+              <div class="stats">
+                  <h6 class="mb-0">Years of Experience</h6> <span>{{doctor.yearsOfex}}</span>
+              </div>
+              <div class="stats">
+                  <h6 class="mb-0">Bookings</h6> <span>142</span>
+              </div>
+              <div class="stats">
+                  <h6 class="mb-0">Reviews</h6> <span>129</span>
+              </div>
+          </div>
+      </div>
   </div>
-  
-   
-
-
-<br><br>
-<h1 style="text-align:center"> Profile </h1>
-
-<div class="card">
-  
-  <img src="https://images.pexels.com/photos/6749781/pexels-photo-6749781.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="John" style="width:100%"><br><br>
-
-  <h2>Thato Mmatli</h2>
-
-  <h2>phone number</h2>
-
-  <p class="title">hopethato69@gmail.com</p>
-
-
-  <p><button (click)="show()" >Edit</button></p>
-
 </div>
-
-

@@ -6,6 +6,7 @@ import {Doctor} from '../../interfaces/doctor.interface';
 
 import { Router, ActivatedRoute } from '@angular/router';
 import { appoinmentService } from 'src/app/service/appoinment.service';
+
 @Component({
   selector: 'app-doctorprofile',
   templateUrl: './doctorprofile.component.html',
@@ -40,7 +41,7 @@ const params = this.activatedRoute.snapshot.params;
             console.log(res);
             this.doctor = res;
             this.DoctorId = res._id;
-            localStorage.setItem('DoctorId',this.DoctorId )
+            // localStorage.setItem('DoctorId',this.DoctorId )
         
           },
           err => console.log(err)
@@ -72,5 +73,10 @@ const params = this.activatedRoute.snapshot.params;
 
 
 // }
+
+
+
+
+
 
 }

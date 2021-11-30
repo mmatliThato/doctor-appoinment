@@ -53,5 +53,18 @@ export class AuthService {
   }
 
 
+  uploadProfileImage(formData: FormData,id:any): Observable<any> {
+
+    return this.http.patch<FormData>(`${this.TokenAPI}/auth/update/${id}`, formData, {
+      reportProgress: true,
+      observe: 'events'
+    })
+  }
+
+
+
+
+
+  
 
 }

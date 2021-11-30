@@ -1,73 +1,63 @@
+body {
+  background-color: yellow;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300
+}
+
+.container {
+  height: 100vh;
+/* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
+ background-color: #abdbe3;
+
+}
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  
-  
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-.child{
-    display: flex;
-    justify-content: space-around;
-}
-.vist{
-    border-radius: 50%;
-    background-color: rgba(83,82,212,255);
-    
-    width: 25%;
-    height: 80px;
-    text-align: center;
-    
-}
-.time{
-    border-radius: 50%;
-    background-color: rgba(105,200,243,255);
-    
-    width: 25%;
-    height: 80px;
-    text-align: center; 
-}
-.review{
-    border-radius: 50%;
-    background-color:rgba(252,149,2,255)
-    ;
-    
-    width: 25%;
-    height: 80px;
-    text-align: center;   
-}
-p{
-    margin-top: 30px;
-    color:white;
-    font-size: 12px;
-    
-}
-button {
+  width: 380px;
   border: none;
-  outline: 0;
-  display: inline-block;
+  border-radius: 15px;
   padding: 8px;
-  color: white;
-  background-color: #00BFA6;
-  text-align: center;
-  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  height: 370px
+}
+
+.upper {
+  height: 100px
+}
+
+.upper img {
   width: 100%;
-  font-size: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px
 }
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
+.user {
+  position: relative
 }
 
-button:hover, a:hover {
-  opacity: 0.7;
+.profile img {
+  height: 80px;
+  width: 80px;
+  margin-top: 2px
+}
+
+.profile {
+  position: absolute;
+  top: -50px;
+  left: 38%;
+  height: 90px;
+  width: 90px;
+  border: 3px solid #fff;
+  border-radius: 50%
+}
+
+.follow {
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 35px
+}
+
+.stats span {
+  font-size: 29px
 }
